@@ -1,5 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom"
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 
 export interface NewsType {
@@ -23,6 +24,7 @@ export default function Layout() {
     <div>
       {location.pathname == `/see-all` ? '' : <Navbar />}
       <Outlet />
+      <Footer/>
     </div>
   )
 }
