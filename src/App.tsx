@@ -18,13 +18,13 @@ export interface NewsType {
 
 
 export default function Layout() {
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <div>
-      {location.pathname == `/see-all` ? '' : <Navbar />}
+      {location.pathname == `/` ?  <Navbar /> : ''}
       <Outlet />
-      <Footer/>
+      {location.pathname == `/` ? <Footer/> : location.pathname == '/see-all' ? <Footer/> : ''}
     </div>
   )
 }

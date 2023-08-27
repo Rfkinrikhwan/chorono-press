@@ -16,7 +16,7 @@ export default function Navbar({ setClickState }:any) {
             <div className="navbar bg-white sticky top-0 z-50 shadow-md">
                 <div className="navbar-start">
                     <div className="btn btn-ghost">
-                        <Link to={`/`}>
+                        <Link to={'/'}>
                             <span className="text-2xl">
                                 <FaHome />
                             </span>
